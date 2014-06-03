@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @geofence.user_id %>
+</p>
+
+<p>
+  <strong>X act:</strong>
+  <%= @geofence.x_act %>
+</p>
+
+<p>
+  <strong>Y act:</strong>
+  <%= @geofence.y_act %>
+</p>
+
+<p>
+  <strong>X al:</strong>
+  <%= @geofence.x_al %>
+</p>
+
+<p>
+  <strong>Y al:</strong>
+  <%= @geofence.y_al %>
+</p>
+
+<p>
+  <strong>Alarm:</strong>
+  <%= @geofence.alarm %>
+</p>
+
+<%= link_to 'Edit', edit_geofence_path(@geofence) %> |
+<%= link_to 'Back', geofences_path %>

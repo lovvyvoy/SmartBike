@@ -1,0 +1,35 @@
+<h1>Listing geofences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>X act</th>
+      <th>Y act</th>
+      <th>X al</th>
+      <th>Y al</th>
+      <th>Alarm</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @geofences.each do |geofence| %>
+      <tr>
+        <td><%= geofence.user_id %></td>
+        <td><%= geofence.x_act %></td>
+        <td><%= geofence.y_act %></td>
+        <td><%= geofence.x_al %></td>
+        <td><%= geofence.y_al %></td>
+        <td><%= geofence.alarm %></td>
+        <td><%= link_to 'Show', geofence %></td>
+        <td><%= link_to 'Edit', edit_geofence_path(geofence) %></td>
+        <td><%= link_to 'Destroy', geofence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Geofence', new_geofence_path %>

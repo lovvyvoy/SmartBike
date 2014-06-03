@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  x_act: 9.99
+  y_act: 9.99
+  x_al: 9.99
+  y_al: 9.99
+  alarm: false
+
+two:
+  user_id: 1
+  x_act: 9.99
+  y_act: 9.99
+  x_al: 9.99
+  y_al: 9.99
+  alarm: false
