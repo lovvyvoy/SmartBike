@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: sqlite3
+  adapter: mysql2
   encoding: utf8
   database: <%=ENV['OPENSHIFT_APP_NAME']%>
   pool: 5
