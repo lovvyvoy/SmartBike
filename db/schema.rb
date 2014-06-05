@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140603175705) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "geofences", force: true do |t|
     t.integer  "user_id"
     t.decimal  "x_act"
@@ -24,6 +27,6 @@ ActiveRecord::Schema.define(version: 20140603175705) do
     t.datetime "updated_at"
   end
 
-  add_index "geofences", ["user_id"], name: "index_geofences_on_user_id", unique: true
+  add_index "geofences", ["user_id"], name: "index_geofences_on_user_id", unique: true, using: :btree
 
 end
