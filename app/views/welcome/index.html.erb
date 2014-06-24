@@ -1,9 +1,17 @@
 <%= stylesheet_link_tag "welcome.css.scss" %>
-<head>
-	<title>SmartBike - Bicicleta inteligente</title>
-</head>
+<title>SmartBike - Bicicleta Inteligente</title>
 <body>
-	<h1>SMARTBIKE 4 LIFE MY NIGGA</h1>
-	<p>Si logran ver esto, significa que el benja lo logró.</p>
-	<%= link_to "Datos", controller: "geofences" %>
+	<div class="jumbotron">
+		<center>
+		<p>
+			<%= image_tag 'Logo2Big.png' %>
+		</p>
+		<p>
+			SmartBike es el futuro, y tú lo sabes.
+		</p>
+		<p>
+			<a href="geofences" class="btn btn-primary btn-lg" role="button">Entrar</a>
+		</p>
+		</center>	
+	</div>
 </body>
