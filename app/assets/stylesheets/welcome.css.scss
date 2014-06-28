@@ -16,12 +16,24 @@ body{
 	text-align: center;
 	font-size: 18px;
 	color: white;
+	background-color: green;
+	background-image: none;
 	text-decoration: none;
 	border-color: transparent;
 	border-radius: 6px;		
 }
 
-.col-lg-6{
+col-lg-6, .col-lg-6{
+	float: left;
+	width: 50%;
+	position: relative;
+	padding-left: 14px;
+	padding-right: 14px;
+	box-sizing: border-box;
+}
+
+col-lg-5, .col-lg-5{
+	float: right;
 	width: 50%;
 	position: relative;
 	padding-left: 14px;
@@ -32,3 +44,45 @@ body{
 h1, h2, .h1, .h2{
 	font-size: 18px;
 }
+
+.navbar-form .form-control{
+	display: inline-block;
+	margin_bottom: 0;
+	width: auto;
+	vertical-align: middle;
+}
+
+.navbar-form{
+	width: auto;
+	border: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: none;
+}
+
+.navbar-right{
+	float: right!important;
+}
+.form_control{
+	
+	height: 34px;
+	padding: 6px;
+	font-sice: 14px;
+	line-height: 1.42857143;
+	background-color: light-grey;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.navbar-form.navbar-right:last-child{
+	margin-right: -15px;	
+}
+
+form{
+	display: block;
+}
+

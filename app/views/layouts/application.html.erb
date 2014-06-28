@@ -36,6 +36,7 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
+
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
@@ -43,12 +44,21 @@
         <div class="container">
           <a class="brand" href="#">SmartBike</a>
         </div>
+<!--         <form class="navbar-form navbar-right" role="form">
+          <div class="form-group">
+            <input type="text" placeholder="User" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Password" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-sucess">Sign in</button>
+        </form> -->
       </div>
     </div>
 
     <div class="container">
         <div class="row">
-          <div class="span9">
+          <div class="span12">
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
@@ -56,7 +66,8 @@
     </div>
 
   </body>
-  
+    <br />
+    <br />
   <footer>
     <p>&copy; BitGear 2014</p>
   </footer>
