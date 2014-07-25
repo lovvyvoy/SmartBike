@@ -34,11 +34,16 @@ gem 'spring',        group: :development
 # Use unicorn as the app server
 gem 'unicorn'
 
-
 gem 'rails_12factor'
 
 #Other useful gems
 gem 'devise'
+
+gem 'omniauth'
+
+gem 'omniauth-twitter'
+
+gem 'omniauth-facebook'
 
 gem 'haml'
 
