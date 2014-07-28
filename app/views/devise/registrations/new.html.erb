@@ -3,26 +3,26 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :name %><br />
-  <%= f.password_field :name, :autofocus => true %></div>
+  <div><%= f.label :Nombre %><br />
+  <%= f.text_field :name, autofocus: true %></div>
 
-  <div><%= f.label :lastname %><br />
-  <%= f.password_field :lastname, :autofocus => true %></div>
+  <div><%= f.label :Apellido %><br />
+  <%= f.text_field :lastname, autofocus: true %></div>
 
-  <div><%= f.label :disp %><br />
-  <%= f.password_field :disp, :autofocus => true %></div>
+  <div><%= f.label :Dispositivo %><br />
+  <%= f.disp_field :disp, autofocus: true %></div>
 
-  <div><%= f.label :email %><br />
+  <div><%= f.label :Email %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
   <div><%= f.label :height %><br />
-  <%= f.password_field :height, :autofocus => true %></div>
+  <%= f.text_field :height, autofocus: true %></div>
 
   <div><%= f.label :weight %><br />
-  <%= f.password_field :weight, :autofocus => true %></div>
+  <%= f.text_field :weight, autofocus: true %></div>
 
   <div><%= f.label :age %><br />
-  <%= f.password_field :age, :autofocus => true %></div>
+  <%= f.text_field :age, autofocus: true %></div>
 
   <div><%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %></div>

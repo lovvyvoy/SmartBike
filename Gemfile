@@ -45,8 +45,6 @@ gem 'omniauth-twitter'
 
 gem 'omniauth-facebook'
 
-gem 'haml'
-
 gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap_v3'
@@ -54,8 +52,6 @@ gem 'bootstrap_v3'
 gem 'compass'
 
 gem 'gritter'
-
-gem 'sass'
 
 gem 'friendly_id'
 

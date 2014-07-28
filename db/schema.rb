@@ -39,6 +39,10 @@ ActiveRecord::Schema.define(version: 20140725202130) do
 
   add_index "identities", ["user_id"], name: "index_identities_on_user_id", using: :btree
 
+  create_table "ticks", id: false, force: true do |t|
+    t.datetime "tick"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
