@@ -20,10 +20,10 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.string   :last_sign_in_ip
 
       ##Info
-      t.integer :weight, null: false
-      t.integer :height, null: false
-      t.string :name, null:false, default: ""
-      t.integer :age, null:false
+      t.integer :weight
+      t.integer :height
+      t.string :name
+      t.integer :age
     
       ## Confirmable
       # t.string   :confirmation_token
