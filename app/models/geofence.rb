@@ -1,7 +1,8 @@
 class Geofence < ActiveRecord::Base
-	acts_as_mappable 	:default_units => :miles,
-                   :default_formula => :sphere,
-                   :distance_field_name => :distance,
-                   :lat_column_name => :lat,
-                   :lng_column_name => :lng
+	reverse_geocoded_by :x_act, :y_act,
+		:address => :location
+	after_validation :reverse_geocode
+
+    def gmaps4rails_address
+   	end
 end
