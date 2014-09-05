@@ -2,10 +2,10 @@ class CreateGeofences < ActiveRecord::Migration
   def change
     create_table :geofences do |t|
       t.integer :user_id
-      t.decimal :x_act
-      t.decimal :y_act
-      t.decimal :x_al
-      t.decimal :y_al
+      t.float :x_act
+      t.float :y_act
+      t.float :x_al
+      t.float :y_al
       t.boolean :alarm
 
       t.timestamps

@@ -1,8 +1,11 @@
 class Geofence < ActiveRecord::Base
-	reverse_geocoded_by :x_act, :y_act,
-		:address => :location
-	after_validation :reverse_geocode
+	reverse_geocoded_by :x_act, :y_act do |obj, results|
+		if geo = results.first
+			obj.city = geo.city
+			obj.zipcode = geo.postal_code
+			obj.country = geo.country_code
+		end
+	end
 
-    def gmaps4rails_address
-   	end
+	after_validation :fetch_address # auto-fetch address
 end
