@@ -63,6 +63,8 @@ gem 'friendly_id'
 
 gem 'foundation'
 
+gem 'skel'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
