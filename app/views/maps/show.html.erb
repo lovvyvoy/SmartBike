@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @map.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @map.longitude %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @map.address %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @map.descripcion %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @map.title %>
+</p>
+
+<%= link_to 'Edit', edit_map_path(@map) %> |
+<%= link_to 'Back', maps_path %>
