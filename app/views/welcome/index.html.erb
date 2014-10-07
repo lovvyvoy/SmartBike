@@ -1,4 +1,3 @@
-<%= stylesheet_link_tag "welcome.css.scss" %>
 <!--
 <title>SmartBike - Bicicleta Inteligente</title>
 <body>
@@ -50,19 +49,19 @@
 
 <html>
 	<head>
-		<title>SmartBike - Bicicleta Intelignete</title>
+		<title>SmartBike - Bicicleta Inteligente</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="javascripts/jquery.min.js"></script>
-		<script src="javascripts/skel.min.js"></script>
-		<script src="javascripts/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="skel.css" />
-			<link rel="stylesheet" href="style.css" />
-			<link rel="stylesheet" href="style-wide.css" />
-		</noscript>
+		<%= javascript_include_tag "jquery.min.js" %>
+		<%= javascript_include_tag "skel.min.js" %>
+		<%= javascript_include_tag "init.js" %>
+
+			<% stylesheet_link_tag "skel.scss" %>
+			<% stylesheet_link_tag "style.scss" %>
+			<% stylesheet_link_tag "style-wide.scss" %>
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
@@ -93,21 +92,21 @@
 				
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-signal"><%= image_tag("pic01.jpg") %></a>
 						<div class="content">
 							<h3>Aplicación Movil Android</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-code"><%= image_tag("pic02.jpg") %></a>
 						<div class="content">
 							<h3>Aplicación y Página Web</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-mobile"><%= image_tag("pic03.jpg") %></a>
 						<div class="content">
 							<h3>Dispositivo Electrónico Arduino</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
@@ -317,7 +316,7 @@
 					</ul>
 					
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; BitGear. All rights reserved.</li><li>Design: <a href="http://bitgear.feriadesoftware.cl">BitGear</a></li>
 					</ul>
 			
 				</div>

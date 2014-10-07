@@ -29,6 +29,20 @@ ActiveRecord::Schema.define(version: 20140915203354) do
 
   add_index "geofences", ["user_id"], name: "index_geofences_on_user_id", unique: true, using: :btree
 
+  create_table "logro", id: false, force: true do |t|
+    t.integer "id_logro",                null: false
+    t.string  "nombre",       limit: 40
+    t.integer "logrado"
+    t.integer "int_multiuso"
+    t.date    "date_inicial"
+    t.date    "date_final"
+  end
+
+  create_table "logro_persona", id: false, force: true do |t|
+    t.integer "id_logro"
+    t.integer "id_persona"
+  end
+
   create_table "maps", force: true do |t|
     t.float    "latitude"
     t.float    "longitude"

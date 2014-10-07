@@ -82,7 +82,7 @@
 /* Header */
 
 	#header {
-		background-image: url('../../images/header.jpg') !important;
+		background-image: url('assets/images/header.jpg') !important;
 		background-size: cover !important;
 		background-position: scroll !important;
 		-ms-behavior: url('css/ie/backgroundsize.min.htc');
@@ -95,7 +95,7 @@
 		
 		&:before {
 			content: '';
-			background-image: url('../images/overlay.png');
+			background-image: url('assets/images/overlay.png');
 			position: absolute;
 			left: 0;
 			top: 0;

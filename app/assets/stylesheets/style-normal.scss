@@ -62,7 +62,7 @@
 
 	#header {
 		background-attachment:		scroll,							scroll,							scroll;
-		background-image:			url('images/top-1600.svg'),		url('images/overlay.png'),		url('../images/header.jpg');
+		background-image:			url('assets/images/top-1600.svg'),		url('assets/images/overlay.png'),		url('assets/images/header.jpg');
 		background-size:			1600px 230px,					auto,							cover;
 		padding: 6em 0 12em 0;
 
@@ -86,7 +86,7 @@
 /* Footer */
 
 	#footer {
-		background-image:			url('images/bottom-1600.svg');
+		background-image:			url('assets/images/bottom-1600.svg');
 		background-size:			1600px 230px;
 		margin-top: -100px;
 		padding: calc(230px + 4em) 0 6em 0;

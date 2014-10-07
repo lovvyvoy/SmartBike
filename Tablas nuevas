@@ -1,0 +1,9 @@
+CREATE TABLE logro(
+id_logro integer PRIMARY KEY,
+nombre varchar(40),
+logrado integer,
+int_multiuso integer,
+date_inicial date,
+date_final date);
+
+

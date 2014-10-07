@@ -1,12 +1,6 @@
 @import 'vars';
 @import 'mixins';
 
-/*
-	Directive by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Basic */
 
 	h2 {
@@ -104,7 +98,7 @@
 /* Header */
 
 	#header {
-		background-image:			url('images/top-1280.svg'),			url('images/overlay.png'),		url('../images/header.jpg');
+		background-image:			url('assets/images/top-1280.svg'),			url('assets/images/overlay.png'),		url('assets/images/header.jpg');
 		background-size:			1280px 184px,						auto,							cover;
 		padding: 3em 0 7em 0;
 
@@ -132,7 +126,7 @@
 /* Footer */
 
 	#footer {
-		background-image:			url('images/bottom-1280.svg');
+		background-image:			url('assets/images/bottom-1280.svg');
 		background-size:			1280px 184px;
 		margin-top: -75px;
 		padding: calc(184px + 2em) 0 2em 0;
