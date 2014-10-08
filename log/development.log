@@ -22564,3 +22564,706 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 17:10:34 -03
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 17:10:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 17:17:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (174.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Geokit is using the domain: 
+  Rendered welcome/index.html.erb within layouts/application (523.4ms)
+  Rendered devise/menu/_registration_items.html.erb (23.5ms)
+  Rendered devise/menu/_login_items.html.erb (3.5ms)
+Completed 200 OK in 2960ms (Views: 2882.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:18:02 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (173.0ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (2.4ms)
+  Rendered devise/menu/_registration_items.html.erb (2.6ms)
+  Rendered devise/menu/_login_items.html.erb (1.0ms)
+Completed 200 OK in 1292ms (Views: 339.3ms | ActiveRecord: 713.8ms)
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 17:18:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (179.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (509.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (174.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAddressToUsers (20141008202214)
+  [1m[35m (173.4ms)[0m  BEGIN
+  [1m[36m (182.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "address" character varying(255)[0m
+  [1m[35mSQL (187.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141008202214"]]
+  [1m[36m (177.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (173.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:26:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (174.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 79ms
+
+SyntaxError (/home/benjamin/SmartBike/app/models/geofence.rb:4: syntax error, unexpected tASSOC, expecting keyword_end
+		:address => :location
+		           ^):
+  app/controllers/geofences_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (105.6ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:27:01 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/home/benjamin/SmartBike/app/models/geofence.rb:4: syntax error, unexpected tASSOC, expecting keyword_end
+		:address => :location
+		           ^):
+  app/controllers/geofences_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (80.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (173.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLocationToUsers (20141008202823)
+  [1m[35m (173.3ms)[0m  BEGIN
+  [1m[36m (173.8ms)[0m  [1mALTER TABLE "users" ADD COLUMN "location" character varying(255)[0m
+  [1m[35mSQL (177.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141008202823"]]
+  [1m[36m (174.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (173.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:29:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (175.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 133ms
+
+SyntaxError (/home/benjamin/SmartBike/app/models/geofence.rb:4: syntax error, unexpected tASSOC, expecting keyword_end
+		:address => :location
+		           ^):
+  app/controllers/geofences_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (123.9ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:29:50 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 21ms
+
+SyntaxError (/home/benjamin/SmartBike/app/models/geofence.rb:4: syntax error, unexpected tASSOC, expecting keyword_end
+		:address => :location
+		           ^):
+  app/controllers/geofences_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (101.4ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 17:36:22 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 18:44:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (173.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Geokit is using the domain: 
+  Rendered welcome/index.html.erb within layouts/application (1058.4ms)
+  Rendered devise/menu/_registration_items.html.erb (22.8ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 4331ms (Views: 4236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 18:44:29 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/benjamin/SmartBike/app/models/geofence.rb:5: syntax error, unexpected tASSOC, expecting keyword_end
+		:address => :location
+		           ^):
+  app/controllers/geofences_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (91.4ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 18:45:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (173.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (176.7ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (103.1ms)
+  Rendered devise/menu/_registration_items.html.erb (22.5ms)
+  Rendered devise/menu/_login_items.html.erb (3.7ms)
+Completed 200 OK in 3474ms (Views: 2425.7ms | ActiveRecord: 702.2ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:22 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:22 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:22 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:22 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:23 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:23 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:23 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:23 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:23 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:24 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:24 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:24 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:24 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:24 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:25 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:25 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:25 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 18:45:25 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:26 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 18:45:26 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (199.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (554.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:30 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:30 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:30 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:31 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:31 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:31 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:31 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:31 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:32 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:32 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:32 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:32 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:32 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:33 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:33 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:33 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:33 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:33 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:34 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:34 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:34 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:34 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:34 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:35 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:35 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:35 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:35 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:36 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:36 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:36 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:37 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:37 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:37 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 18:45:37 -0300
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 18:52:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (173.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (175.8ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (107.3ms)
+  Rendered devise/menu/_registration_items.html.erb (22.2ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 3410ms (Views: 2444.2ms | ActiveRecord: 703.1ms)
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 18:52:40 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (166.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (508.7ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 18:56:30 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mGeofence Load (174.1ms)[0m  [1mSELECT "geofences".* FROM "geofences"[0m
+  Rendered geofences/index.html.erb within layouts/application (144.6ms)
+Completed 500 Internal Server Error in 935ms
+
+ActionView::Template::Error (undefined method `y_act' for nil:NilClass):
+    18:     </div>
+    19:   </div>
+    20: -->
+    21:   <%= image_tag "http:://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+    22: </body>
+  app/views/geofences/index.html.erb:21:in `_app_views_geofences_index_html_erb__109770776_89032710'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.3ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 18:56:32 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (178.3ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 213ms
+
+ActionView::Template::Error (undefined method `y_act' for nil:NilClass):
+    18:     </div>
+    19:   </div>
+    20: -->
+    21:   <%= image_tag "http:://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+    22: </body>
+  app/views/geofences/index.html.erb:21:in `_app_views_geofences_index_html_erb__109770776_89032710'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.8ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:03:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (176.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (176.0ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (141.3ms)
+Completed 500 Internal Server Error in 1252ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    19:     </div>
+    20:   </div>
+    21: -->
+    22:   <%= image_tag 
+    23:   "http://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom=16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+    24: 
+    25: </body>
+  app/views/geofences/index.html.erb:22:in `_app_views_geofences_index_html_erb__285434940_100422040'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (91.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.6ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:03:25 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mGeofence Load (173.7ms)[0m  [1mSELECT "geofences".* FROM "geofences"[0m
+  Rendered geofences/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    19:     </div>
+    20:   </div>
+    21: -->
+    22:   <%= image_tag 
+    23:   "http://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom=16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+    24: 
+    25: </body>
+  app/views/geofences/index.html.erb:22:in `_app_views_geofences_index_html_erb__285434940_100422040'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.4ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:04:51 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (261.8ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (10.8ms)
+  Rendered devise/menu/_registration_items.html.erb (21.8ms)
+  Rendered devise/menu/_login_items.html.erb (3.7ms)
+Completed 200 OK in 3075ms (Views: 2268.5ms | ActiveRecord: 529.3ms)
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:04:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (168.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (518.4ms)

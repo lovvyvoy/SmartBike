@@ -30,5 +30,24 @@
   <%= @geofence.alarm %>
 </p>
 
+  <br>
+  <br>
+<!--
+  <div style='width: 800px;'>
+    <div id="map" style='width: 800px; height: 400px;'>
+
+    <script type="text/javascript">
+      handler = Gmaps.build('Google');
+      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      markers = handler.addMarkers(<%=raw @hash.to_json %>);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+      });
+    </script>
+    </div>
+  </div>
+-->
+  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom=16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>
