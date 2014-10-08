@@ -5,6 +5,10 @@ class GeofencesController < ApplicationController
   # GET /geofences.json
   def index
     @geofences = Geofence.all
+    @hash = Gmaps4rails.build_markers(@geofences) do |geofence, marker|
+        marker.lat geofence.y_act
+        marker.lng geofence.x_act
+    end
   end
 
   # GET /geofences/1

@@ -56,11 +56,11 @@
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<%= javascript_include_tag "jquery.min.js" %>
 		<%= javascript_include_tag "skel.min.js" %>
-		<%= javascript_include_tag "init.js" %>
-
-			<% stylesheet_link_tag "skel.scss" %>
-			<% stylesheet_link_tag "style.scss" %>
-			<% stylesheet_link_tag "style-wide.scss" %>
+		<%= javascript_include_tag "init.js" %> 
+		
+		<% stylesheet_link_tag "style.scss" %>
+		<% stylesheet_link_tag "style-wide.scss" %>
+		<% stylesheet_link_tag "skel.scss" %>
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -68,22 +68,28 @@
 
 		<!-- Header -->
 			<div id="header">
-				<span class="logo icon fa-paper-plane-o"></span>
+				<span class="logo icon fa-bicycle"></span>
+				
+				<p>
+				<iframe width="500" height="320" src="http://www.youtube.com/embed/feIn3KPIe08" frameborder="0"></iframe>
+				</p> <br />
+				<!-- 
 				<h1>Hola. Bienvenido a SmartBike</h1>
 				<p>La solucíón a todos los problemas de las bicicletas</a>
 				<br />
 				Ve a donde tu quieras y donde tu bicicleta no quieres que vaya</a>.</p>
+				-->
 			</div>
 
 		<!-- Main -->
 			<div id="main">
-			
+
 				<header class="major container small">
-					<h2>We conduct experiments that
+					<h2>Ve donde tu quieras
 					<br />
-					may or may not seriously
+					y a donde no quieres que 
 					<br />
-					break the universe</h2>
+					tu bicicleta vaya</h2>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
@@ -267,7 +273,7 @@
 					<h3>Get shady with science</h3>
 					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
 					<ul class="actions">
-						<li><a href="#" class="button">Join our crew</a></li>
+						<li><a href="geofences" role="button">Ver el Mapa</a></li>
 					</ul>
 				</footer>
 

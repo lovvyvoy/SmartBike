@@ -301,7 +301,7 @@
 		
 		&:after {
 			@include vendor-property('transition', 'opacity 0.25s ease-in-out');
-			background-image: url('assets/images/overlay.png');
+			background-image: url('images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
@@ -677,7 +677,7 @@
 
 	#header {
 		background-attachment:		scroll,							scroll,					fixed;
-		background-image:			url('assets/images/top-3200.svg'),		url('/assets/images/overlay.png'),		url('assets/images/header.jpg');
+		background-image:			url('assets/images/top-3200.svg'),		url('images/overlay.png'),		url('assets/images/header.jpg');
 		background-position:		bottom center,					top left,				center center;
 		background-repeat:			repeat-x,						repeat,					no-repeat;
 		background-size:			3200px 460px,					auto,					cover;
