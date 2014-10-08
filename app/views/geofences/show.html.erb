@@ -47,7 +47,7 @@
     </div>
   </div>
 -->
-  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom=16&markers=#{@geofence.y_act}%2C#{@geofence.x_act}" %>
+  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?markers=#{@geofence.x_act},#{@geofence.y_act}&zoom=20&size=500x500&sensor=false" %>
 
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>

@@ -23267,3 +23267,2352 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.7ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (168.5ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (518.4ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:18:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (203.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (187.9ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (64.4ms)
+  Rendered devise/menu/_registration_items.html.erb (22.7ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 3829ms (Views: 2380.3ms | ActiveRecord: 961.5ms)
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:18:26 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (73.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (544.1ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:19:46 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mGeofence Load (173.4ms)[0m  [1mSELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (12.3ms)
+  Rendered devise/menu/_registration_items.html.erb (2.0ms)
+  Rendered devise/menu/_login_items.html.erb (1.1ms)
+Completed 200 OK in 534ms (Views: 349.7ms | ActiveRecord: 173.4ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:47 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:47 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:48 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:48 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:48 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:48 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:49 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:49 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:49 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:49 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:49 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:50 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:50 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:50 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:50 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:50 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:19:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:51 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:19:51 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (406.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:54 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:54 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:54 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:54 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:54 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:55 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:56 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:56 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:56 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:56 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:56 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:57 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:57 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:57 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:57 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:57 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:58 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:58 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:58 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:58 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:59 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:59 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:59 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:59 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:19:59 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:00 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:00 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:00 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:00 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:00 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:01 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:01 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:01 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:01 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:02 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:02 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:02 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:02 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:20:03 -0300
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:20:58 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (173.2ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (14.2ms)
+  Rendered devise/menu/_registration_items.html.erb (2.1ms)
+  Rendered devise/menu/_login_items.html.erb (0.9ms)
+Completed 200 OK in 679ms (Views: 496.4ms | ActiveRecord: 173.2ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:20:59 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:20:59 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:20:59 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:00 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:00 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:00 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:00 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:00 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:01 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:01 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:01 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:01 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:01 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:02 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:02 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:02 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:21:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:03 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:21:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (332.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:04 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:04 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:04 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:04 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:04 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:06 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:06 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:07 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:08 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:08 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:08 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:08 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:08 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:09 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:09 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:09 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:09 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:09 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:11 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:11 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:11 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:11 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:11 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:12 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:12 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:12 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:12 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:12 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:13 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:21:13 -0300
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:28:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (173.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (174.1ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (64.8ms)
+  Rendered devise/menu/_registration_items.html.erb (22.6ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 3659ms (Views: 2394.3ms | ActiveRecord: 873.1ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:28:27 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mGeofence Load (174.5ms)[0m  [1mSELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (6.0ms)
+  Rendered devise/menu/_registration_items.html.erb (1.7ms)
+  Rendered devise/menu/_login_items.html.erb (0.9ms)
+Completed 200 OK in 674ms (Views: 489.6ms | ActiveRecord: 174.5ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:29 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:29 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:29 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:29 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:29 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:30 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:30 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:30 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:30 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:31 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:31 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:31 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:31 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:31 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:32 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:32 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:32 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:28:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:32 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:28:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (183.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (531.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:37 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:37 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:37 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:37 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:38 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:38 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:38 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:38 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:38 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:39 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:39 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:39 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:39 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:39 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:40 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:40 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:42 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:42 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:42 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:43 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:43 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:43 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:43 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:43 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:44 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:28:44 -0300
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:35:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (178.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (177.9ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (75.4ms)
+  Rendered devise/menu/_registration_items.html.erb (22.4ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 3644ms (Views: 2367.5ms | ActiveRecord: 891.6ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:35:29 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mGeofence Load (179.2ms)[0m  [1mSELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (7.0ms)
+  Rendered devise/menu/_registration_items.html.erb (1.8ms)
+  Rendered devise/menu/_login_items.html.erb (1.0ms)
+Completed 200 OK in 659ms (Views: 470.2ms | ActiveRecord: 179.2ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:30 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:30 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:30 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:30 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:31 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:31 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:31 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:31 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:32 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:32 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:32 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:32 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:32 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:33 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:33 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:33 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:35:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:34 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:35:34 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (185.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (514.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:37 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:37 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:37 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:37 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:37 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:38 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:38 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:38 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:39 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:39 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:39 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:39 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:39 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:40 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:41 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:41 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:41 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:41 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:43 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:43 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:43 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:43 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:44 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:44 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:44 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:45 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:45 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:45 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:45 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:35:46 -0300
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:36:19 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mGeofence Load (173.1ms)[0m  SELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (14.5ms)
+  Rendered devise/menu/_registration_items.html.erb (1.9ms)
+  Rendered devise/menu/_login_items.html.erb (0.9ms)
+Completed 200 OK in 636ms (Views: 451.1ms | ActiveRecord: 173.1ms)
+
+
+Started GET "/geofences/1" for 127.0.0.1 at 2014-10-08 19:36:20 -0300
+Processing by GeofencesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mGeofence Load (175.1ms)[0m  [1mSELECT  "geofences".* FROM "geofences"  WHERE "geofences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered geofences/show.html.erb within layouts/application (7.6ms)
+  Rendered devise/menu/_registration_items.html.erb (2.4ms)
+  Rendered devise/menu/_login_items.html.erb (1.0ms)
+Completed 200 OK in 553ms (Views: 364.2ms | ActiveRecord: 175.1ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:21 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:21 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:21 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:21 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:22 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:22 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:22 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:22 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:22 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:23 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:23 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:23 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:23 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:23 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:24 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:24 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:36:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:24 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:36:25 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (330.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:25 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:25 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:26 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:26 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:26 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:26 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:26 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:27 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:28 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:28 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:28 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:29 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:29 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:29 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:29 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:29 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:30 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:30 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:30 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:30 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:30 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:31 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:32 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:32 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:32 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:32 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:32 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:33 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:33 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:33 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:33 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:33 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:34 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:34 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:34 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:34 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:34 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:36:35 -0300
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:36:59 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (173.7ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (3.0ms)
+  Rendered devise/menu/_registration_items.html.erb (2.5ms)
+  Rendered devise/menu/_login_items.html.erb (1.1ms)
+Completed 200 OK in 717ms (Views: 515.6ms | ActiveRecord: 173.7ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:37:00 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mGeofence Load (174.0ms)[0m  [1mSELECT "geofences".* FROM "geofences"[0m
+  Rendered geofences/index.html.erb within layouts/application (1.2ms)
+  Rendered devise/menu/_registration_items.html.erb (2.7ms)
+  Rendered devise/menu/_login_items.html.erb (1.1ms)
+Completed 200 OK in 712ms (Views: 528.2ms | ActiveRecord: 174.0ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:01 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:01 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:01 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:02 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:02 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:02 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:02 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:02 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:03 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:03 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:03 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:03 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:03 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:04 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:04 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:04 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:37:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:05 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:37:05 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (334.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:08 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:09 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:09 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:09 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:09 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:09 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:10 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:10 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:10 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:10 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:10 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:11 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:11 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:11 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:11 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:11 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:12 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:13 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:13 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:13 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:13 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:14 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:14 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:14 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:15 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:15 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:15 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:15 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:37:16 -0300
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:40:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (175.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (175.3ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (103.0ms)
+  Rendered devise/menu/_registration_items.html.erb (22.3ms)
+  Rendered devise/menu/_login_items.html.erb (3.7ms)
+Completed 200 OK in 3380ms (Views: 2417.1ms | ActiveRecord: 707.0ms)
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:40:43 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mGeofence Load (175.2ms)[0m  [1mSELECT "geofences".* FROM "geofences"[0m
+  Rendered geofences/index.html.erb within layouts/application (1.3ms)
+  Rendered devise/menu/_registration_items.html.erb (2.0ms)
+  Rendered devise/menu/_login_items.html.erb (1.0ms)
+Completed 200 OK in 521ms (Views: 336.2ms | ActiveRecord: 175.2ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:44 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:44 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:45 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:45 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:45 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:45 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:46 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:46 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:46 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:46 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:46 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:47 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:47 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:47 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:47 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:47 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:48 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:40:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:48 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:40:48 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (201.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (607.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:50 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:50 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:50 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:50 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:51 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:51 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:51 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:51 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:51 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:53 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:53 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:53 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:53 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:53 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:54 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:54 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:54 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:54 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:54 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:55 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:55 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:55 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:55 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:55 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:56 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:56 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:56 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:56 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:56 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:57 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:57 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:57 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:57 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:57 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:58 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:58 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:58 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:58 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:59 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:59 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:59 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:40:59 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:00 -0300
+
+
+Started GET "/geofences" for 127.0.0.1 at 2014-10-08 19:41:32 -0300
+Processing by GeofencesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mGeofence Load (187.2ms)[0m  SELECT "geofences".* FROM "geofences"
+  Rendered geofences/index.html.erb within layouts/application (1.0ms)
+  Rendered devise/menu/_registration_items.html.erb (3.5ms)
+  Rendered devise/menu/_login_items.html.erb (1.4ms)
+Completed 200 OK in 769ms (Views: 569.9ms | ActiveRecord: 187.2ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:33 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:33 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:34 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:34 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:34 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:34 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:34 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:35 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:35 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:35 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:35 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:35 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:36 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:36 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:36 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:36 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:36 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 19:41:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:37 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-08 19:41:37 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run_machine'
+  /usr/lib/ruby/vendor_ruby/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (378.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:39 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:39 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:39 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:39 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:39 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:40 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:40 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:40 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:40 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:40 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:41 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:42 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:42 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:42 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:42 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:42 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:43 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:43 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:43 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:43 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:43 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:44 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:44 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:44 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:44 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:44 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:45 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:45 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:45 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:45 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:45 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:46 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:46 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:46 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:46 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:46 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:47 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:47 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:47 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 19:41:47 -0300

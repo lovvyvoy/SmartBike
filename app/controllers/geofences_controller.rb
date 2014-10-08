@@ -6,8 +6,8 @@ class GeofencesController < ApplicationController
   def index
     @geofences = Geofence.all
     @hash = Gmaps4rails.build_markers(@geofences) do |geofence, marker|
-        marker.lat geofence.y_act
-        marker.lng geofence.x_act
+        marker.lat geofence.x_act
+        marker.lng geofence.y_act
     end
   end
 
