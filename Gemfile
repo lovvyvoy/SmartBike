@@ -28,9 +28,6 @@ gem 'geokit-rails'
 gem 'gmaps4rails'
 
 gem 'geocoder'
-
-gem 'underscore'
-
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
@@ -47,23 +44,13 @@ gem 'devise'
 
 gem 'omniauth'
 
-gem 'omniauth-twitter'
-
-gem 'omniauth-facebook'
-
 gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap_v3'
 
-gem 'compass'
-
-gem 'gritter'
-
-gem 'friendly_id'
-
-gem 'foundation'
-
 gem 'skel'
+
+gem 'pubnub'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

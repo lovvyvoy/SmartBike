@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :viajes
+
   resources :maps
 
   devise_for :users
