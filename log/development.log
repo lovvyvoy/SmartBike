@@ -28940,3 +28940,14 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/bottom-32
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.5ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (361.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (181.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateViajes (20141009201559)
+  [1m[35m (173.3ms)[0m  BEGIN
+  [1m[36m (172.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (194.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateViajes (20141009201559)
+  [1m[35m (205.7ms)[0m  BEGIN
+  [1m[36m (257.9ms)[0m  [1mCREATE TABLE "viajes" ("id" serial primary key, "id_viaje" integer, "user_id" integer, "distancia" float, "tiempo" integer, "fecha" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (191.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141009201559"]]
+  [1m[36m (202.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (201.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
