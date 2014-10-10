@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :logros
+
   resources :viajes
 
   resources :maps

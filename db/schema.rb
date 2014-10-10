@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141009214330) do
+ActiveRecord::Schema.define(version: 20141010100627) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,11 +36,24 @@ ActiveRecord::Schema.define(version: 20141009214330) do
     t.integer "int_multiuso"
     t.date    "date_inicial"
     t.date    "date_final"
+    t.integer "meta"
   end
 
   create_table "logro_persona", id: false, force: true do |t|
     t.integer "id_logro"
     t.integer "id_persona"
+  end
+
+  create_table "logros", force: true do |t|
+    t.integer  "id_logro"
+    t.float    "meta"
+    t.float    "int_multiuso"
+    t.boolean  "logrado"
+    t.string   "nombre"
+    t.date     "date_inicial"
+    t.date     "date_final"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "maps", force: true do |t|
@@ -66,8 +79,13 @@ ActiveRecord::Schema.define(version: 20141009214330) do
     t.string   "last_sign_in_ip"
     t.string   "address"
     t.string   "location"
-    t.integer  "distancia"
+    t.float    "distancia"
     t.integer  "tiempo"
+    t.integer  "calorias"
+    t.float    "co2"
+    t.float    "peso"
+    t.boolean  "sexo"
+    t.integer  "edad"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
@@ -82,6 +100,14 @@ ActiveRecord::Schema.define(version: 20141009214330) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "terminado"
+    t.integer  "calorias"
+    t.float    "co2"
+  end
+
+  create_table "wea", id: false, force: true do |t|
+    t.integer "tipo"
+    t.integer "actual"
+    t.integer "user_id"
   end
 
 end

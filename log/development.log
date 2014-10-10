@@ -35812,3 +35812,44 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/bottom-32
 
 
 Started GET "/" for 127.0.0.1 at 2014-10-10 02:02:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (173.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddMetaToLogro (20141010061220)
+  [1m[35m (172.2ms)[0m  BEGIN
+  [1m[36m (175.1ms)[0m  [1mALTER TABLE "logros" ADD COLUMN "meta" integer[0m
+PG::UndefinedTable: ERROR:  relation "logros" does not exist
+: ALTER TABLE "logros" ADD COLUMN "meta" integer
+  [1m[35m (173.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (173.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddValuesToUser (20141010085619)
+  [1m[35m (195.1ms)[0m  BEGIN
+  [1m[36m (174.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "peso" float[0m
+  [1m[35m (178.9ms)[0m  ALTER TABLE "users" ADD COLUMN "sexo" boolean
+  [1m[36m (173.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "edad" integer[0m
+  [1m[35m (174.7ms)[0m  ALTER TABLE "users" ADD COLUMN "calorias" integer
+PG::DuplicateColumn: ERROR:  column "calorias" of relation "users" already exists
+: ALTER TABLE "users" ADD COLUMN "calorias" integer
+  [1m[36m (174.9ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (174.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddValuesToUser (20141010085619)
+  [1m[35m (174.8ms)[0m  BEGIN
+  [1m[36m (176.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "peso" float[0m
+  [1m[35m (189.1ms)[0m  ALTER TABLE "users" ADD COLUMN "sexo" boolean
+  [1m[36m (175.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "edad" integer[0m
+  [1m[35m (174.7ms)[0m  ALTER TABLE "users" ADD COLUMN "tiempo" integer
+PG::DuplicateColumn: ERROR:  column "tiempo" of relation "users" already exists
+: ALTER TABLE "users" ADD COLUMN "tiempo" integer
+  [1m[36m (172.7ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (175.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddValuesToUser (20141010085619)
+  [1m[35m (172.3ms)[0m  BEGIN
+  [1m[36m (175.0ms)[0m  [1mALTER TABLE "users" ADD COLUMN "peso" float[0m
+  [1m[35m (172.5ms)[0m  ALTER TABLE "users" ADD COLUMN "sexo" boolean
+  [1m[36m (171.9ms)[0m  [1mALTER TABLE "users" ADD COLUMN "edad" integer[0m
+  [1m[35mSQL (172.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010085619"]]
+  [1m[36m (174.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLogros (20141010100627)
+  [1m[35m (175.4ms)[0m  BEGIN
+  [1m[36m (355.1ms)[0m  [1mCREATE TABLE "logros" ("id" serial primary key, "id_logro" integer, "meta" float, "int_multiuso" float, "logrado" boolean, "nombre" character varying(255), "date_inicial" date, "date_final" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (172.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010100627"]]
+  [1m[36m (176.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (172.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
