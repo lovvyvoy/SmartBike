@@ -13,6 +13,6 @@ end
 
 $pubnub.publish(
         :channel => 'SmartBike',
-        :message => 'Alerta',
+        :message => 'alerta',
         :callback => $callback
     )
