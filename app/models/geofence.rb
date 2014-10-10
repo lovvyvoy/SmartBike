@@ -11,7 +11,6 @@ class Geofence < ActiveRecord::Base
 	after_validation :reverse_geocode, :alarm
 
 	protected
-
 		def alarma
 				pubnub.publish(
 				    :channel => 'SmartBike',
