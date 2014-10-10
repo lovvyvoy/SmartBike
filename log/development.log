@@ -35328,3 +35328,487 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/bottom-32
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.7ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (490.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 01:55:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (197.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Geokit is using the domain: 
+  Rendered welcome/index.html.erb within layouts/application (126.4ms)
+  Rendered devise/menu/_registration_items.html.erb (22.0ms)
+  Rendered devise/menu/_login_items.html.erb (3.6ms)
+Completed 200 OK in 2508ms (Views: 2438.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 01:55:15 -0300
+Processing by WelcomeController#index as HTML
+Geokit is using the domain: 
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+  Rendered devise/menu/_registration_items.html.erb (2.2ms)
+  Rendered devise/menu/_login_items.html.erb (0.9ms)
+Completed 200 OK in 316ms (Views: 310.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_mixins.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:16 -0300
+
+
+Started GET "/assets/_vars.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:16 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:16 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:17 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:17 -0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:17 -0300
+
+
+Started GET "/assets/geofences.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:17 -0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:18 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:18 -0300
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:18 -0300
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:18 -0300
+
+
+Started GET "/assets/style-mobilep.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:19 -0300
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:19 -0300
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:19 -0300
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:19 -0300
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:20 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:20 -0300
+
+
+Started GET "/assets/viajes.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:20 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 01:55:20 -0300
+
+
+Started GET "/assets/stylesheets/font-awesome.min.css" for 127.0.0.1 at 2014-10-10 01:55:21 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/font-awesome.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (189.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (583.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:22 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:22 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:22 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:25 -0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:25 -0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:25 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:26 -0300
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:26 -0300
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:26 -0300
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:26 -0300
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:26 -0300
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:27 -0300
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:27 -0300
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:27 -0300
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:27 -0300
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:28 -0300
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:28 -0300
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:28 -0300
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:28 -0300
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:29 -0300
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:29 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:29 -0300
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:29 -0300
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:29 -0300
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:30 -0300
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:30 -0300
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:30 -0300
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:30 -0300
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:31 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:31 -0300
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:31 -0300
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:31 -0300
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:31 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:32 -0300
+
+
+Started GET "/assets/geofences.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:32 -0300
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:32 -0300
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:33 -0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:33 -0300
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:33 -0300
+
+
+Started GET "/assets/viajes.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:33 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 01:55:34 -0300
+
+
+Started GET "/assets/images/Cover.png" for 127.0.0.1 at 2014-10-10 01:55:34 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/Cover.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (33.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (794.1ms)
+
+
+Started GET "/assets/pic01.jpg" for 127.0.0.1 at 2014-10-10 01:55:35 -0300
+
+
+Started GET "/assets/pic02.jpg" for 127.0.0.1 at 2014-10-10 01:55:36 -0300
+
+
+Started GET "/assets/pic03.jpg" for 127.0.0.1 at 2014-10-10 01:55:36 -0300
+
+
+Started GET "/assets/images/overlay.png" for 127.0.0.1 at 2014-10-10 01:55:36 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/overlay.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (390.4ms)
+
+
+Started GET "/assets/images/bottom-3200.svg" for 127.0.0.1 at 2014-10-10 01:55:37 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bottom-3200.svg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:80:in `block in pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `catch'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:78:in `pre_process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:53:in `process'
+  /usr/lib/ruby/vendor_ruby/thin/connection.rb:38:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  /usr/lib/ruby/vendor_ruby/thin/backends/base.rb:61:in `start'
+  /usr/lib/ruby/vendor_ruby/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.1) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.1) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  /usr/local/lib/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (388.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 02:02:16 -0300
