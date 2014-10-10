@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id viaje:</strong>
+  <%= @viaje.id_viaje %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @viaje.user_id %>
+</p>
+
+<p>
+  <strong>Distancia:</strong>
+  <%= @viaje.distancia %>
+</p>
+
+<p>
+  <strong>Tiempo:</strong>
+  <%= @viaje.tiempo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @viaje.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_viaje_path(@viaje) %> |
+<%= link_to 'Back', viajes_path %>

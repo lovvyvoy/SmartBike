@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id logro:</strong>
+  <%= @logro.id_logro %>
+</p>
+
+<p>
+  <strong>Meta:</strong>
+  <%= @logro.meta %>
+</p>
+
+<p>
+  <strong>Int multiuso:</strong>
+  <%= @logro.int_multiuso %>
+</p>
+
+<p>
+  <strong>Logrado:</strong>
+  <%= @logro.logrado %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @logro.nombre %>
+</p>
+
+<p>
+  <strong>Date inicial:</strong>
+  <%= @logro.date_inicial %>
+</p>
+
+<p>
+  <strong>Date final:</strong>
+  <%= @logro.date_final %>
+</p>
+
+<%= link_to 'Edit', edit_logro_path(@logro) %> |
+<%= link_to 'Back', logros_path %>

@@ -1,0 +1,37 @@
+<h1>Listing logros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id logro</th>
+      <th>Meta</th>
+      <th>Int multiuso</th>
+      <th>Logrado</th>
+      <th>Nombre</th>
+      <th>Date inicial</th>
+      <th>Date final</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logros.each do |logro| %>
+      <tr>
+        <td><%= logro.id_logro %></td>
+        <td><%= logro.meta %></td>
+        <td><%= logro.int_multiuso %></td>
+        <td><%= logro.logrado %></td>
+        <td><%= logro.nombre %></td>
+        <td><%= logro.date_inicial %></td>
+        <td><%= logro.date_final %></td>
+        <td><%= link_to 'Show', logro %></td>
+        <td><%= link_to 'Edit', edit_logro_path(logro) %></td>
+        <td><%= link_to 'Destroy', logro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Logro', new_logro_path %>

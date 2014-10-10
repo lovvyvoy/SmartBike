@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_logro: 1
+  meta: 1.5
+  int_multiuso: 1.5
+  logrado: false
+  nombre: MyString
+  date_inicial: 2014-10-10
+  date_final: 2014-10-10
+
+two:
+  id_logro: 1
+  meta: 1.5
+  int_multiuso: 1.5
+  logrado: false
+  nombre: MyString
+  date_inicial: 2014-10-10
+  date_final: 2014-10-10

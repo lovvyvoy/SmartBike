@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_viaje: 1
+  user_id: 1
+  distancia: 1.5
+  tiempo: 
+  fecha: 2014-10-09
+
+two:
+  id_viaje: 1
+  user_id: 1
+  distancia: 1.5
+  tiempo: 
+  fecha: 2014-10-09

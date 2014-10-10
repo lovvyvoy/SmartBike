@@ -1,0 +1,45 @@
+<%= form_for(@logro) do |f| %>
+  <% if @logro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@logro.errors.count, "error") %> prohibited this logro from being saved:</h2>
+
+      <ul>
+      <% @logro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_logro %><br>
+    <%= f.number_field :id_logro %>
+  </div>
+  <div class="field">
+    <%= f.label :meta %><br>
+    <%= f.text_field :meta %>
+  </div>
+  <div class="field">
+    <%= f.label :int_multiuso %><br>
+    <%= f.text_field :int_multiuso %>
+  </div>
+  <div class="field">
+    <%= f.label :logrado %><br>
+    <%= f.check_box :logrado %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :date_inicial %><br>
+    <%= f.date_select :date_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :date_final %><br>
+    <%= f.date_select :date_final %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
