@@ -8,7 +8,7 @@ pubnub = Pubnub.new(
 class Geofence < ActiveRecord::Base
 
 	reverse_geocoded_by :y_act, :x_act
-	after_validation :reverse_geocode, :alarm
+	after_validation :reverse_geocode, :alarma
 
 	protected
 		def alarma
