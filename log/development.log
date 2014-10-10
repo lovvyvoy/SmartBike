@@ -35853,3 +35853,5 @@ Migrating to CreateLogros (20141010100627)
   [1m[35mSQL (172.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010100627"]]
   [1m[36m (176.6ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (172.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (174.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (175.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

@@ -193,3 +193,77 @@ D, [2014-10-10T12:22:37.360628 #3304] DEBUG -- Pubnub: Pubnub::Publish#uri http:
 D, [2014-10-10T12:22:38.633073 #3304] DEBUG -- Pubnub: Event#handle_response
 D, [2014-10-10T12:22:38.658033 #3304] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
 D, [2014-10-10T12:22:38.660476 #3304] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:12.329419 #3774] DEBUG -- Pubnub: Symbolizing options keys
+D, [2014-10-10T12:57:12.330227 #3774] DEBUG -- Pubnub: Setting default values
+D, [2014-10-10T12:57:12.331060 #3774] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
+D, [2014-10-10T12:57:12.331379 #3774] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | starting EM in new thread
+D, [2014-10-10T12:57:12.331603 #3774] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | We're running on thin
+D, [2014-10-10T12:57:12.332531 #3774] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | EM started in new thread
+D, [2014-10-10T12:57:12.333267 #3774] DEBUG -- Pubnub: Event#initialize | Initialized Pubnub::Publish
+D, [2014-10-10T12:57:12.333540 #3774] DEBUG -- Pubnub: Created event Pubnub::Publish
+D, [2014-10-10T12:57:12.333881 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:12.334105 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Adding event to async_events
+D, [2014-10-10T12:57:12.334314 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Starting railgun
+D, [2014-10-10T12:57:12.334524 #3774] DEBUG -- Pubnub: Pubnub::Client#start_railgun | Initializing railgun
+D, [2014-10-10T12:57:12.727246 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:12.728340 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:12.729008 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:12.805849 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.600438 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.602793 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.334216 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:13.603855 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.604166 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.604472 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.606985 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:13.608281 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.466269 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:13.630691 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:13.631440 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.632089 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.632745 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.633368 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:12.806401 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:13.635450 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:13.636044 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.636627 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.637788 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.638393 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:13.466619 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:13.640128 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:13.641007 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.333936 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-10T12:57:13.642310 #3774] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-10T12:57:13.642850 #3774] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-10T12:57:13.643352 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.643866 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.644438 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:13.641538 #3774] DEBUG -- Pubnub: Event#fire
+D, [2014-10-10T12:57:13.646250 #3774] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-10T12:57:13.646773 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:13.603426 #3774] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-10T12:57:13.649038 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.645478 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.647847 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.639506 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.634711 #3774] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=3f2efa72-660a-46cd-aa69-4a4375f3afeb
+D, [2014-10-10T12:57:13.922288 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:13.923653 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:13.924019 #3774] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:14.485674 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:14.608304 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:14.613160 #3774] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:14.487564 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:14.614776 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:14.615183 #3774] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:14.611760 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:14.616678 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:14.617333 #3774] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:14.610114 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:14.607482 #3774] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-10T12:57:14.619928 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:14.618458 #3774] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-10T12:57:14.623508 #3774] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-10T12:57:14.622867 #3774] DEBUG -- Pubnub: Firing callbacks

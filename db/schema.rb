@@ -29,21 +29,6 @@ ActiveRecord::Schema.define(version: 20141010100627) do
 
   add_index "geofences", ["user_id"], name: "index_geofences_on_user_id", unique: true, using: :btree
 
-  create_table "logro", id: false, force: true do |t|
-    t.integer "id_logro",                null: false
-    t.string  "nombre",       limit: 40
-    t.integer "logrado"
-    t.integer "int_multiuso"
-    t.date    "date_inicial"
-    t.date    "date_final"
-    t.integer "meta"
-  end
-
-  create_table "logro_persona", id: false, force: true do |t|
-    t.integer "id_logro"
-    t.integer "id_persona"
-  end
-
   create_table "logros", force: true do |t|
     t.integer  "id_logro"
     t.float    "meta"
@@ -54,6 +39,7 @@ ActiveRecord::Schema.define(version: 20141010100627) do
     t.date     "date_final"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "maps", force: true do |t|
@@ -102,12 +88,6 @@ ActiveRecord::Schema.define(version: 20141010100627) do
     t.boolean  "terminado"
     t.integer  "calorias"
     t.float    "co2"
-  end
-
-  create_table "wea", id: false, force: true do |t|
-    t.integer "tipo"
-    t.integer "actual"
-    t.integer "user_id"
   end
 
 end
