@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 ruby '1.9.3', :engine => "ruby", :engine_version => "1.9.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'thin'
+gem 'pubnub'
+gem 'haml'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -22,8 +25,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails degenerates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
-gem 'geokit-rails'
 
 gem 'gmaps4rails'
 
@@ -50,7 +51,10 @@ gem 'bootstrap_v3'
 
 gem 'skel'
 
-gem 'pubnub'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
+
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
