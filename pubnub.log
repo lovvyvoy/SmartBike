@@ -364,3 +364,51 @@ Created new Pubnub::Client instance
 D, [2014-10-17T11:56:57.225332 #2425] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | starting EM in new thread
 D, [2014-10-17T11:56:57.225557 #2425] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | We're running on thin
 D, [2014-10-17T11:56:57.226648 #2425] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | EM started in new thread
+D, [2014-10-19T16:49:32.177611 #2818] DEBUG -- Pubnub: Symbolizing options keys
+D, [2014-10-19T16:49:32.198686 #2818] DEBUG -- Pubnub: Setting default values
+D, [2014-10-19T16:49:32.199198 #2818] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
+D, [2014-10-19T16:49:32.199509 #2818] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | starting EM in new thread
+D, [2014-10-19T16:49:32.199737 #2818] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | We're running on thin
+D, [2014-10-19T16:49:32.200667 #2818] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | EM started in new thread
+D, [2014-10-19T16:49:32.201470 #2818] DEBUG -- Pubnub: Event#initialize | Initialized Pubnub::Publish
+D, [2014-10-19T16:49:32.201756 #2818] DEBUG -- Pubnub: Created event Pubnub::Publish
+D, [2014-10-19T16:49:32.202000 #2818] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-19T16:49:32.202231 #2818] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Adding event to async_events
+D, [2014-10-19T16:49:32.202455 #2818] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Starting railgun
+D, [2014-10-19T16:49:32.202680 #2818] DEBUG -- Pubnub: Pubnub::Client#start_railgun | Initializing railgun
+D, [2014-10-19T16:49:32.366161 #2818] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-19T16:49:32.366959 #2818] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-19T16:49:32.367260 #2818] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-19T16:49:32.369096 #2818] DEBUG -- Pubnub: Event#fire
+D, [2014-10-19T16:49:32.378413 #2818] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-19T16:49:32.378981 #2818] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-19T16:49:32.379994 #2818] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=a2eacaec-2aaf-4232-a0d9-1f72b5e913b5
+D, [2014-10-19T16:49:33.234020 #2818] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-19T16:49:33.234890 #2818] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-19T16:49:33.235182 #2818] DEBUG -- Pubnub: Firing callbacks
+D, [2014-10-19T16:51:46.115399 #2851] DEBUG -- Pubnub: Symbolizing options keys
+D, [2014-10-19T16:51:46.116118 #2851] DEBUG -- Pubnub: Setting default values
+D, [2014-10-19T16:51:46.116595 #2851] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
+D, [2014-10-19T16:51:46.116928 #2851] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | starting EM in new thread
+D, [2014-10-19T16:51:46.117179 #2851] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | We're running on thin
+D, [2014-10-19T16:51:46.118313 #2851] DEBUG -- Pubnub: Pubnub::Client#start_event_machine | EM started in new thread
+D, [2014-10-19T16:51:46.119004 #2851] DEBUG -- Pubnub: Event#initialize | Initialized Pubnub::Publish
+D, [2014-10-19T16:51:46.119275 #2851] DEBUG -- Pubnub: Created event Pubnub::Publish
+D, [2014-10-19T16:51:46.119506 #2851] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-19T16:51:46.119723 #2851] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Adding event to async_events
+D, [2014-10-19T16:51:46.119930 #2851] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Starting railgun
+D, [2014-10-19T16:51:46.120176 #2851] DEBUG -- Pubnub: Pubnub::Client#start_railgun | Initializing railgun
+D, [2014-10-19T16:51:46.285156 #2851] DEBUG -- Pubnub: Pubnub::SingleEvent#fire
+D, [2014-10-19T16:51:46.285698 #2851] DEBUG -- Pubnub: Pubnub::SingleEvent#fire | Event already on list!
+D, [2014-10-19T16:51:46.286056 #2851] DEBUG -- Pubnub: Pubnub::Event#fire
+D, [2014-10-19T16:51:46.360152 #2851] DEBUG -- Pubnub: Event#fire
+D, [2014-10-19T16:51:46.361024 #2851] DEBUG -- Pubnub: Event#start_event | sending request
+D, [2014-10-19T16:51:46.361415 #2851] DEBUG -- Pubnub: Event#start_event | tt: 0; ctt 0
+D, [2014-10-19T16:51:46.362557 #2851] DEBUG -- Pubnub: Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6f71c317-4b13-4c45-9735-7c485d58a88c
+D, [2014-10-19T16:51:52.219524 #2851] DEBUG -- Pubnub: Event#handle_response
+D, [2014-10-19T16:51:52.331043 #2851] DEBUG -- Pubnub: Event#add_common_data_to_envelopes
+D, [2014-10-19T16:51:52.332147 #2851] DEBUG -- Pubnub: Firing callbacks
