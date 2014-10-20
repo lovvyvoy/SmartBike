@@ -6,37 +6,59 @@ Created new Pubnub::Client instance
 Pubnub::Client#start_event_machine | starting EM in new thread
 Pubnub::Client#start_event_machine | We're running on thin
 Pubnub::Client#start_event_machine | EM started in new thread
-Symbolizing options keys
-Setting default values
-
-
-Created new Pubnub::Client instance
-Pubnub::Client#start_event_machine | starting EM in new thread
-Pubnub::Client#start_event_machine | We're running on thin
-Pubnub::Client#start_event_machine | EM started in new thread
-  [1m[36mSQL (306.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
-  [1m[35m (276.3ms)[0m  DROP TABLE "geofences"
-  [1m[36m (254.8ms)[0m  [1mCREATE TABLE "geofences" ("id" serial primary key, "user_id" integer, "x_act" decimal, "y_act" decimal, "x_al" decimal, "y_al" decimal, "alarm" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
-  [1m[35m (184.8ms)[0m  CREATE UNIQUE INDEX  "index_geofences_on_user_id" ON "geofences" USING btree ("user_id")
-  [1m[36m (200.0ms)[0m  [1mDROP TABLE "logros"[0m
-  [1m[35m (209.4ms)[0m  CREATE TABLE "logros" ("id" serial primary key, "id_logro" integer, "meta" float, "int_multiuso" float, "logrado" boolean, "nombre" character varying(255), "date_inicial" date, "date_final" date, "created_at" timestamp, "updated_at" timestamp, "user_id" integer) 
-  [1m[36m (197.5ms)[0m  [1mDROP TABLE "maps"[0m
-  [1m[35m (194.2ms)[0m  CREATE TABLE "maps" ("id" serial primary key, "latitude" float, "longitude" float, "address" character varying(255), "descripcion" text, "title" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
-  [1m[36m (183.0ms)[0m  [1mDROP TABLE "users"[0m
-  [1m[35m (191.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "address" character varying(255), "location" character varying(255), "distancia" float, "tiempo" integer, "calorias" integer, "co2" float, "peso" float, "sexo" boolean, "edad" integer) 
-  [1m[36m (182.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
-  [1m[35m (194.2ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
-  [1m[36m (201.1ms)[0m  [1mDROP TABLE "viajes"[0m
-  [1m[35m (217.5ms)[0m  CREATE TABLE "viajes" ("id" serial primary key, "id_viaje" integer, "user_id" integer, "distancia" float, "tiempo" integer, "fecha" date, "created_at" timestamp, "updated_at" timestamp, "terminado" boolean, "calorias" integer, "co2" float) 
-  [1m[36m (177.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
-  [1m[35mActiveRecord::SchemaMigration Load (187.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
-Symbolizing options keys
-Setting default values
-
-
-Created new Pubnub::Client instance
-Pubnub::Client#start_event_machine | starting EM in new thread
-Pubnub::Client#start_event_machine | We're running on thin
-Pubnub::Client#start_event_machine | EM started in new thread
-  [1m[36mActiveRecord::SchemaMigration Load (174.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[35mActiveRecord::SchemaMigration Load (174.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Event#initialize | Initialized Pubnub::Publish
+Created event Pubnub::Publish
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Adding event to async_events
+Pubnub::SingleEvent#fire | Starting railgun
+Pubnub::Client#start_railgun | Initializing railgun
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::Event#fire
+Event#start_event | sending request
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire | Event already on list!
+Event#fire
+Event#start_event | tt: 0; ctt 0
+Event#fire
+Pubnub::Event#fire
+Pubnub::Event#fire
+Event#start_event | sending request
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=8fc69953-ab1d-45a7-9eb0-cf0cd0d021c3
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=8fc69953-ab1d-45a7-9eb0-cf0cd0d021c3
+Event#fire
+Event#fire
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=8fc69953-ab1d-45a7-9eb0-cf0cd0d021c3
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=8fc69953-ab1d-45a7-9eb0-cf0cd0d021c3
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=8fc69953-ab1d-45a7-9eb0-cf0cd0d021c3
+Event#handle_response
+Event#handle_response
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#handle_response
+Event#add_common_data_to_envelopes
+Event#handle_response
+Event#handle_response
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks

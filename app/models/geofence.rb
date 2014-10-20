@@ -6,8 +6,9 @@ class Geofence < ActiveRecord::Base
 	# private	 
 	def alarma
 		$pubnub.publish(
-		        :channel => 'SmartBike',
-		        :message => 'alerta'
-		    )
+		  :channel => 'SmartBike',
+		  :message => 'alerta',
+		  :callback => $callback
+		)
 	end
 end
