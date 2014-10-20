@@ -86,3 +86,243 @@ Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d
 Event#handle_response
 Event#add_common_data_to_envelopes
 Firing callbacks
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+Event#initialize | Initialized Pubnub::Publish
+Created event Pubnub::Publish
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Adding event to async_events
+Pubnub::SingleEvent#fire | Starting railgun
+Pubnub::Client#start_railgun | Initializing railgun
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Event#fire
+Pubnub::Event#fire
+Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Event#fire
+Event#fire
+Event#start_event | sending request
+Event#fire
+Event#start_event | sending request
+Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Event#fire
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Pubnub::Event#fire
+Event#fire
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=6c6fb2b9-49b3-4817-92ce-6a6ab809ed32
+Event#handle_response
+Event#handle_response
+Event#handle_response
+Event#handle_response
+Event#add_common_data_to_envelopes
+Event#handle_response
+Event#handle_response
+Event#handle_response
+Event#handle_response
+Event#add_common_data_to_envelopes
+Event#add_common_data_to_envelopes
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Firing callbacks
+Firing callbacks
+Firing callbacks
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+Event#initialize | Initialized Pubnub::Publish
+Created event Pubnub::Publish
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Adding event to async_events
+Pubnub::SingleEvent#fire | Starting railgun
+Pubnub::Client#start_railgun | Initializing railgun
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=48dbed52-6d80-4bf5-ae85-eddc8c11a7e0
+Pubnub::Event#fire
+Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=48dbed52-6d80-4bf5-ae85-eddc8c11a7e0
+Event#handle_response
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#handle_response
+Event#add_common_data_to_envelopes
+Firing callbacks
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+Event#initialize | Initialized Pubnub::Publish
+Created event Pubnub::Publish
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Adding event to async_events
+Pubnub::SingleEvent#fire | Starting railgun
+Pubnub::Client#start_railgun | Initializing railgun
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire
+Pubnub::Event#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Event#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::SingleEvent#fire | Event already on list!
+Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Event#start_event | sending request
+Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Pubnub::Event#fire
+Pubnub::Event#fire
+Pubnub::Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#start_event | tt: 0; ctt 0
+Event#fire
+Pubnub::SingleEvent#fire | Event already on list!
+Pubnub::Event#fire
+Event#fire
+Event#fire
+Event#start_event | sending request
+Pubnub::Event#fire
+Event#fire
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#fire
+Event#start_event | sending request
+Event#start_event | tt: 0; ctt 0
+Event#start_event | tt: 0; ctt 0
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#start_event | sending request
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#fire
+Event#start_event | sending request
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#start_event | tt: 0; ctt 0
+Event#start_event | sending request
+Event#handle_response
+Event#start_event | tt: 0; ctt 0
+Event#handle_response
+Event#handle_response
+Event#handle_response
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#start_event | tt: 0; ctt 0
+Event#add_common_data_to_envelopes
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Event#add_common_data_to_envelopes
+Event#add_common_data_to_envelopes
+Event#add_common_data_to_envelopes
+Event#handle_response
+Event#handle_response
+Pubnub::Publish#uri http://pubsub.pubnub.com/publish/pub-c-ecd86a1b-4ad4-4b48-9d34-8b07cf3d8c3f/sub-c-380453a0-4f40-11e4-b29a-02ee2ddab7fe/0/SmartBike/0/%22alerta%22?pnsdk=PubNub-Ruby/3.5.8&uuid=ef33378e-b857-4004-b5ef-cf0bee467e08
+Firing callbacks
+Firing callbacks
+Event#handle_response
+Event#add_common_data_to_envelopes
+Firing callbacks
+Event#add_common_data_to_envelopes
+Event#add_common_data_to_envelopes
+Event#handle_response
+Firing callbacks
+Firing callbacks
+Firing callbacks
+Firing callbacks
+Event#add_common_data_to_envelopes
+Event#handle_response
+Firing callbacks
+Event#add_common_data_to_envelopes
+Firing callbacks
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
