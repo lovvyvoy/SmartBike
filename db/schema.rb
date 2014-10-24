@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141010100627) do
+ActiveRecord::Schema.define(version: 20141024182224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "geofences", force: true do |t|
     t.integer  "user_id"
-    t.decimal  "x_act"
-    t.decimal  "y_act"
-    t.decimal  "x_al"
-    t.decimal  "y_al"
+    t.float    "x_act"
+    t.float    "y_act"
+    t.float    "x_al"
+    t.float    "y_al"
     t.boolean  "alarm"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20141010100627) do
     t.date     "date_final"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   create_table "maps", force: true do |t|
@@ -65,13 +64,15 @@ ActiveRecord::Schema.define(version: 20141010100627) do
     t.string   "last_sign_in_ip"
     t.string   "address"
     t.string   "location"
-    t.float    "distancia"
+    t.integer  "distancia"
     t.integer  "tiempo"
-    t.integer  "calorias"
-    t.float    "co2"
     t.float    "peso"
     t.boolean  "sexo"
     t.integer  "edad"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "image"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
@@ -86,8 +87,6 @@ ActiveRecord::Schema.define(version: 20141010100627) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "terminado"
-    t.integer  "calorias"
-    t.float    "co2"
   end
 
 end

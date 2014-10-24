@@ -51,3 +51,4 @@ production:
   password: W6tQwlWlG1Mlnrk1Xka9giei6T
   host:  ec2-54-197-249-167.compute-1.amazonaws.com
   sslmode: require
+  

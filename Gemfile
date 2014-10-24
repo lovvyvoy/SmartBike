@@ -45,6 +45,8 @@ gem 'devise'
 
 gem 'omniauth'
 
+#gem 'therubyracer'
+
 gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap_v3'
@@ -54,7 +56,7 @@ gem 'skel'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
-
+gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

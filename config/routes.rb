@@ -1,11 +1,22 @@
 Rails.application.routes.draw do
+  #get 'sessions/new'
+
+  #get 'sessions/create'
+
+  #get 'sessions/failure'
+
+  #get 'sessions/destroy'
+  #get '/login', :to => 'sessions#new', :as => :login
+  #get '/logout', :to => 'sessions#destroy'
+  #match '/auth/:provider/callback', :to => 'sessions#create'
+  #match '/auth/failure', :to => 'sessions#failure'
   resources :logros
 
   resources :viajes
 
   resources :maps
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   get 'welcome/index'
 
   resources :geofences
