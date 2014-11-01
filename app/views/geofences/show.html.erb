@@ -25,19 +25,25 @@
     <div id="map" style='width: 900px; height: 500px;'>
 
     <script type="text/javascript">
-      // handler = Gmaps.build('Google');
-      // handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-      //   markers = handler.addMarkers(<%=raw @hash.to_json %>);
-      //   handler.bounds.extendWith(markers);
-      //   handler.fitMapToBounds();
-      // });
+      handler = Gmaps.build('Google');
+      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+        markers = handler.addMarkers(<%=raw @hash.to_json %>);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+      });
 
       function setMarkers(){
-        var myLatLng = new google.maps.LatLng(<%=@geofence.y_act%>, <%=@geofence.x_act%>);
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            animation: google.maps.Animation.DROP
+        // var myLatLng = new google.maps.LatLng(<%=@geofence.y_act%>, <%=@geofence.x_act%>);
+        // var marker = new google.maps.Marker({
+        //     position: myLatLng,
+        //     map: map,
+        //     animation: google.maps.Animation.DROP
+        // });
+        handler = Gmaps.build('Google');
+        handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+          markers = handler.addMarkers(<%=raw @hash.to_json %>);
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
         });
       }
 
