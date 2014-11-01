@@ -34,7 +34,7 @@
 
       function setMarkers(){
         // var myLatLng = new google.maps.LatLng(<%=@geofence.y_act%>, <%=@geofence.x_act%>);
-        // var marker = new google.maps.Marker({
+        // var marker = new google  .maps.Marker({
         //     position: myLatLng,
         //     map: map,
         //     animation: google.maps.Animation.DROP
@@ -53,7 +53,6 @@
     </div>
   </div>
 
-<%= @geofence.y_act, @geofence.x_act %>
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>
 
