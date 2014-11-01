@@ -31,51 +31,23 @@
       //   handler.bounds.extendWith(markers);
       //   handler.fitMapToBounds();
       // });
-      var map;
-      var markers = []; // Create a marker array to hold your markers
 
       function setMarkers(){
-        var myLatLng = new google.maps.LatLng(<%= @geofence.y_act%>, <%= @geofence.x_act%>);
+        var myLatLng = new google.maps.LatLng(<%=@geofence.y_act%>, <%=@geofence.x_act%>);
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
       }
 
-      function reloadMarkers() {
-
-          for (var i=0; i<markers.length; i++) {
-              markers[i].setMap(null);
-          }
-          markers = [];
-          setMarkers();
-      }
-
-      function initialize() {
-
-          var mapOptions = {
-              zoom: 5,
-              center: new google.maps.LatLng(10,12),
-              mapTypeId: google.maps.MapTypeId.SATELLITE
-          }
-
-          map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-          setMarkers();
-
-          // Bind event listener on button to reload markers
-          document.getElementById('reloadMarkers').addEventListener('click', reloadMarkers);
-      }
-
-      setInterval(initialize(), 5000);
+      setInterval(setMarkers(), 5000);
 
     </script>
     </div>
   </div>
 
-
+<%= @geofence.y_act, @geofence.x_act %>
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>
 
