@@ -17187,3 +17187,11 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/bottom-32
 
 
 Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2014-10-24 15:32:25 -0300
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
