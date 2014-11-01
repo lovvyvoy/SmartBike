@@ -26,14 +26,22 @@
 
     <script type="text/javascript">
       handler = Gmaps.build('Google');
-      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-        markers = handler.addMarkers(<%=raw @hash.to_json %>);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
-      });
+      handler.buildMap({
+        provider: {},
+        internal: {id: 'map'}
+        },
+        function(){
+          markers = handler.addMarkers(
+            "lat": <%=@geofence.y_act%>,
+            "lng": <%=@geofence.x_act%>
+            );
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
+        });
     </script>
     </div>
   </div>
+
 
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>
