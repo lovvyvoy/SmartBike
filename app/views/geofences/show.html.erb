@@ -25,24 +25,52 @@
     <div id="map" style='width: 900px; height: 500px;'>
 
     <script type="text/javascript">
-      handler = Gmaps.build('Google');
-      handler.buildMap({
-        provider: {},
-        internal: {id: 'map'}
-        },
-        setInterval(function(){  
-          markers = handler.addMarkers([
-            "lat": <%=@geofence.y_act%>,
-            "lng": <%=@geofence.x_act%>,
-            "picture":{
-              "url": "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png",
-              "width": 36,
-              "height": 36
-            }
-          ]);
-          handler.bounds.extendWith(markers);
-          handler.fitMapToBounds();
-        }, 5000);  
+      // handler = Gmaps.build('Google');
+      // handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      //   markers = handler.addMarkers(<%=raw @hash.to_json %>);
+      //   handler.bounds.extendWith(markers);
+      //   handler.fitMapToBounds();
+      // });
+      var map;
+      var markers = []; // Create a marker array to hold your markers
+
+      function setMarkers(){
+        var myLatLng = new google.maps.LatLng(<%= @geofence.y_act%>, <%= @geofence.x_act%>);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+        markers.push(marker);
+      }
+
+      function reloadMarkers() {
+
+          for (var i=0; i<markers.length; i++) {
+              markers[i].setMap(null);
+          }
+          markers = [];
+          setMarkers();
+      }
+
+      function initialize() {
+
+          var mapOptions = {
+              zoom: 5,
+              center: new google.maps.LatLng(10,12),
+              mapTypeId: google.maps.MapTypeId.SATELLITE
+          }
+
+          map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+          setMarkers();
+
+          // Bind event listener on button to reload markers
+          document.getElementById('reloadMarkers').addEventListener('click', reloadMarkers);
+      }
+
+      setInterval(initialize(), 5000);
+
     </script>
     </div>
   </div>
