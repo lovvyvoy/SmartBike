@@ -6,10 +6,30 @@
   <br>
   <br>
 
+  <div style='width: 820px;'>
+    <div id="map" style='width: 900px; height: 500px;'>
 
+    <script type="text/javascript">
 
-<%=@geofence.y_act %>
-<%=@geofence.x_act %>
+      function setMarkers(){
+        handler = Gmaps.build('Google');
+        handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+          markers = handler.addMarkers(
+            "lat": <%=@geofence.x_act %>,
+            "lon": <%=@geofence.y_act %>
+            );
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
+        });
+      }
+
+      setMarkers();
+      setInterval(setMarkers(), 5000);
+
+    </script>
+
+    </div>
+  </div>
 
 <%= link_to 'Edit', edit_geofence_path(@geofence) %> |
 <%= link_to 'Back', geofences_path %>
