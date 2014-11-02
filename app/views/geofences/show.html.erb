@@ -16,7 +16,7 @@
         handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
           markers = handler.addMarkers(
             "lat": <%=@geofence.x_act %>,
-            "lon": <%=@geofence.y_act %>
+            "lng": <%=@geofence.y_act %>
             );
           handler.bounds.extendWith(markers);
           handler.fitMapToBounds();
