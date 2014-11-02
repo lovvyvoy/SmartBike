@@ -14,15 +14,16 @@
 
         handler = Gmaps.build('Google');
         handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-          markers = handler.addMarkers(
-            "lat": <%=@geofence.x_act %>,
-            "lng": <%=@geofence.y_act %>
-            );
+          markers = handler.addMarkers([
+            {
+              "lat": <%=@geofence.x_act %>,
+              "lng": <%=@geofence.y_act %>
+            }
+          ]);
           handler.bounds.extendWith(markers);
           handler.fitMapToBounds();
-        });
-      
-
+          }
+        );
     </script>
 
     </div>
