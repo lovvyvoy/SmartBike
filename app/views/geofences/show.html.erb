@@ -11,7 +11,7 @@
 
     <script type="text/javascript">
 
-
+      function setMarkers(){
         handler = Gmaps.build('Google');
         handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
           markers = handler.addMarkers([
@@ -24,6 +24,9 @@
           handler.fitMapToBounds();
           }
         );
+      }
+      
+      setInterval(setMarkers(), 1000);
     </script>
 
     </div>
