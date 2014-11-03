@@ -19,7 +19,7 @@
               "lng": <%=@geofence.y_act %>
             }
           ]);
-          handler.fitMapToBounds();
+          handler.bounds.extendWith(markers);
           }
         );
         
@@ -42,7 +42,7 @@
               "lng": <%=@geofence.y_act %>
             }
           ]);
-          handler.fitMapToBounds();
+          handler.bounds.extendWith(markers);
           }
         );
         }, 10000);
