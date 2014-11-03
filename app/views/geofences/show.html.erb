@@ -23,9 +23,9 @@
           handler.fitMapToBounds();
           }
         );
-
-        setTimeout(function (){
-          handler.replaceMarkers(
+        
+        function setMarkers(map){
+          map.replaceMarkers(
             [
               {
                 "lat": <%=@geofence.x_act %>,
@@ -33,8 +33,9 @@
               }
             ]
           );
-        }, 1000);
-        
+        }
+
+        setTimeout(window.location.reload(true), 1000);
       </script>
 
     </div>
