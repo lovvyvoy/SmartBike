@@ -9,35 +9,39 @@
   <div style='width: 820px;'>
     <div id="map" style='width: 900px; height: 500px;'>
 
-    <script type="text/javascript">
+    <% if @geofence.alarm %>
+      <script type="text/javascript">
 
-      handler = Gmaps.build('Google');
-      handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 13}}, function(){
-        markers = handler.addMarkers([
-          {
-            "lat": <%=@geofence.x_act %>,
-            "lng": <%=@geofence.y_act %>
-          }
-        ]);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
-        }
-      );
-      
-      function setMarkers(map){
-        map.replaceMarkers(
-          [
+        handler = Gmaps.build('Google');
+        handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 13}}, function(){
+          markers = handler.addMarkers([
             {
               "lat": <%=@geofence.x_act %>,
               "lng": <%=@geofence.y_act %>
             }
-          ]
+          ]);
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
+          }
         );
-      }
+        
+        function setMarkers(map){
+          map.replaceMarkers(
+            [
+              {
+                "lat": <%=@geofence.x_act %>,
+                "lng": <%=@geofence.y_act %>
+              }
+            ]
+          );
+        }
 
-      setInterval(setMarkers(handler), 1000);
-      
-    </script>
+        setInterval(setMarkers(handler), 1000);
+      </script>
+
+    <% else %>
+    
+    <% end %>
 
     </div>
   </div>
