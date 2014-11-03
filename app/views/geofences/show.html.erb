@@ -9,7 +9,7 @@
   <div style='width: 820px;'>
     <div id="map" style='width: 900px; height: 500px;'>
 
-    <% if @geofence.alarm %>
+<!--     <% if @geofence.alarm %>  -->
       <script type="text/javascript">
 
         handler = Gmaps.build('Google');
@@ -36,17 +36,14 @@
           );
         }
 
-        setInterval(setMarkers(handler), 1000);
+        setTimeout(setMarkers(handler), 1000);
       </script>
-
+<!-- 
     <% else %>
-    
-    <% end %>
 
+    <% end %>
+ -->
     </div>
   </div>
-
-<%= link_to 'Edit', edit_geofence_path(@geofence) %> |
-<%= link_to 'Back', geofences_path %>
 
 </body>
