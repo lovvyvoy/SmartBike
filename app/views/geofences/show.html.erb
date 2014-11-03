@@ -24,7 +24,7 @@
           }
         );
         
-        function setMarkers(map){
+        function setMarkers(){
           map.replaceMarkers(
             [
               {
@@ -35,7 +35,7 @@
           );
         }
 
-        setTimeout( function(){
+        setInterval( function(){
           handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
