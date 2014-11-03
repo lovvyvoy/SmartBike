@@ -12,7 +12,7 @@
       <script type="text/javascript">
 
         handler = Gmaps.build('Google');
-        handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 13}}, function(){
+        handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
               "lat": <%=@geofence.x_act %>,
@@ -23,9 +23,9 @@
           handler.fitMapToBounds();
           }
         );
-        
-        function setMarkers(map){
-          map.replaceMarkers(
+
+        setTimeout(function (){
+          handler.replaceMarkers(
             [
               {
                 "lat": <%=@geofence.x_act %>,
@@ -33,9 +33,8 @@
               }
             ]
           );
-        }
-
-        setTimeout(setMarkers(handler), 1000);
+        }, 1000);
+        
       </script>
 
     </div>
