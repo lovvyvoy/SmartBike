@@ -38,7 +38,7 @@
         setInterval( function(){
           <% geogeo = Geofence.find(1) %>
           <% geogeo.reload %>
-          <%= geogeo.x_act %>
+          handler = Gmaps.build('Google');
           handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
