@@ -36,8 +36,9 @@
         }
 
         setInterval( function(){
-          <% @geofence.reload %>
-          markers = handler.replaceMarkers([
+          <% @geofence.reset_column_information %>
+          handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
+          markers = handler.addMarkers([
             {
               "lat": <%=@geofence.x_act %>,
               "lng": <%=@geofence.y_act %>
@@ -45,6 +46,8 @@
           ]);
           handler.bounds.extendWith(markers);
           handler.fitMapToBounds();
+          }
+        );
         }, 10000);
       </script>
 
