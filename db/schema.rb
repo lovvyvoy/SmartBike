@@ -18,13 +18,14 @@ ActiveRecord::Schema.define(version: 20141024182224) do
 
   create_table "geofences", force: true do |t|
     t.integer  "user_id"
-    t.float    "x_act"
-    t.float    "y_act"
-    t.float    "x_al"
-    t.float    "y_al"
+    t.decimal  "x_act"
+    t.decimal  "y_act"
+    t.decimal  "x_al"
+    t.decimal  "y_al"
     t.boolean  "alarm"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "distancia_ultimo_punto", default: 0.0
   end
 
   add_index "geofences", ["user_id"], name: "index_geofences_on_user_id", unique: true, using: :btree
@@ -32,13 +33,14 @@ ActiveRecord::Schema.define(version: 20141024182224) do
   create_table "logros", force: true do |t|
     t.integer  "id_logro"
     t.float    "meta"
-    t.float    "int_multiuso"
-    t.boolean  "logrado"
+    t.float    "int_multiuso", default: 0.0
+    t.boolean  "logrado",      default: false
     t.string   "nombre"
     t.date     "date_inicial"
     t.date     "date_final"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "maps", force: true do |t|
@@ -52,20 +54,22 @@ ActiveRecord::Schema.define(version: 20141024182224) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",  null: false
+    t.string   "encrypted_password",     default: "",  null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,   null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "address"
     t.string   "location"
-    t.integer  "distancia"
-    t.integer  "tiempo"
+    t.float    "distancia",              default: 0.0
+    t.integer  "tiempo",                 default: 0
+    t.integer  "calorias",               default: 0
+    t.float    "co2",                    default: 0.0
     t.float    "peso"
     t.boolean  "sexo"
     t.integer  "edad"
@@ -81,12 +85,14 @@ ActiveRecord::Schema.define(version: 20141024182224) do
   create_table "viajes", force: true do |t|
     t.integer  "id_viaje"
     t.integer  "user_id"
-    t.float    "distancia"
-    t.integer  "tiempo"
+    t.float    "distancia",  default: 0.0
+    t.integer  "tiempo",     default: 0
     t.date     "fecha"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "terminado"
+    t.integer  "calorias",   default: 0
+    t.float    "co2",        default: 0.0
   end
 
 end

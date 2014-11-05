@@ -17195,3 +17195,29 @@ Created new Pubnub::Client instance
 Pubnub::Client#start_event_machine | starting EM in new thread
 Pubnub::Client#start_event_machine | We're running on thin
 Pubnub::Client#start_event_machine | EM started in new thread
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+  [1m[36mActiveRecord::SchemaMigration Load (433.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20141021114028)
+  [1m[35m (468.9ms)[0m  BEGIN
+  [1m[36m (424.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "provider" character varying(255)[0m
+  [1m[35m (446.7ms)[0m  ALTER TABLE "users" ADD COLUMN "uid" character varying(255)
+  [1m[36mSQL (749.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141021114028"]]
+  [1m[35m (469.7ms)[0m  COMMIT
+Migrating to AddNameToUsers (20141021115038)
+  [1m[36m (730.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (456.2ms)[0m  ALTER TABLE "users" ADD COLUMN "name" character varying(255)
+  [1m[36mSQL (1468.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141021115038"]]
+  [1m[35m (445.6ms)[0m  COMMIT
+Migrating to AddImageToUser (20141024182224)
+  [1m[36m (423.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1503.4ms)[0m  ALTER TABLE "users" ADD COLUMN "image" character varying(255)
+  [1m[36mSQL (209.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141024182224"]]
+  [1m[35m (438.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (444.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
