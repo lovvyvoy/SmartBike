@@ -36,12 +36,12 @@
         }
 
         setInterval( function(){
-          <% geogeo = Geofence.find(1) %>
+          <% @all_geofence = Geofence.where("id =?", @geofence.id)%>
           handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
-              "lat": <%=geogeo.x_act %>,
-              "lng": <%=geogeo.y_act %>
+              "lat": <%=@all_geofence.x_act %>,
+              "lng": <%=@all_geofence.y_act %>
             }
           ]);
           handler.bounds.extendWith(markers);
