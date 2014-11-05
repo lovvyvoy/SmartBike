@@ -45,6 +45,8 @@
               "lat": <%=geogeo.x_act %>,
               "lng": <%=geogeo.y_act %>
             }
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
           ]); 
           }
         );
