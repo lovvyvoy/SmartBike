@@ -23,6 +23,17 @@
           handler.fitMapToBounds();
           }
         );
+        
+        function setMarkers(){
+          map.replaceMarkers(
+            [
+              {
+                "lat": <%=@geofence.x_act %>,
+                "lng": <%=@geofence.y_act %>
+              }
+            ]
+          );
+        }
 
         setInterval( function(){
           <% geogeo = Geofence.find(1) %>
@@ -33,9 +44,9 @@
               "lat": <%=geogeo.x_act %>,
               "lng": <%=geogeo.y_act %>
             }
+          ]);
           handler.bounds.extendWith(markers);
           handler.fitMapToBounds();
-          ]); 
           }
         );
         }, 10000);
