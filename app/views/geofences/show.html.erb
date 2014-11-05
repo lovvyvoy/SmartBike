@@ -23,22 +23,10 @@
           handler.fitMapToBounds();
           }
         );
-          
-        function setMarkers(){
-          map.replaceMarkers(
-            [
-              {
-                "lat": <%=@geofence.x_act %>,
-                "lng": <%=@geofence.y_act %>
-              }
-            ]
-          );
-        }
 
         setInterval( function(){
           <% geogeo = Geofence.find(1) %>
           <% geogeo.reload %>
-          handler = Gmaps.build('Google');
           handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
