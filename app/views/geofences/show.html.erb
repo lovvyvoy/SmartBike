@@ -36,7 +36,7 @@
         }
 
         setInterval( function(){
-          <% geofence.reload %>
+          <% @geofence.reload %>
           handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
           markers = handler.addMarkers([
             {
