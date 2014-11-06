@@ -17221,3 +17221,13 @@ Migrating to AddImageToUser (20141024182224)
   [1m[36mSQL (209.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141024182224"]]
   [1m[35m (438.7ms)[0m  COMMIT
   [1m[36mActiveRecord::SchemaMigration Load (444.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+  [1m[36mActiveRecord::SchemaMigration Load (155.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (165.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
