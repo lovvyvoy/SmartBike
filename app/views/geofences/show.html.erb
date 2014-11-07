@@ -4,8 +4,9 @@
 <body>
   <br>
   <br>
+  <br>
   <div style='width: 820px;'>
-    <div id="map" style='width: 900px; height: 500px;'>
+    <div id="map" style='width: 1000px; height: 500px;'>
 
       <% if @geofence.alarm? %>
         <script type="text/javascript">
@@ -24,21 +25,9 @@
           );
 
           setInterval( function(){
-            <% geogeo = Geofence.new 
-             geogeo.id = 1
-             geogeo.reload %>
-            handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
-            markers = handler.addMarkers([
-              {
-                "lat": <%=geogeo.x_act %>,
-                "lng": <%=geogeo.y_act %>
-              }
-            ]);
-            handler.bounds.extendWith(markers);
-            handler.fitMapToBounds();
-            }
-          );
+            window.location.reload(1)
           }, 10000);
+          
         </script>
 
         
