@@ -18,8 +18,6 @@ Rails.application.routes.draw do
 
   resources :geofences
 
-  resources :users, :only => [:show]
-
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 
   get 'welcome/index'
