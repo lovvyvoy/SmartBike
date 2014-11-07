@@ -37,6 +37,7 @@
           setInterval( function(){
             <% geogeo = Geofence.find(1) %>
             <% geogeo.reload(*) %>
+            <% Geofence.update_all %>
             handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
             markers = handler.addMarkers([
               {
