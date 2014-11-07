@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   #get '/logout', :to => 'sessions#destroy'
   #match '/auth/:provider/callback', :to => 'sessions#create'
   #match '/auth/failure', :to => 'sessions#failure'
+  
   resources :logros
 
   resources :viajes
