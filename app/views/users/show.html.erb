@@ -1,40 +1,44 @@
 <br>
 <br>
 
+<div id="content">
+  <div style="width: 40%; float:left">
+    Bienvenido a tu perfil:
+    <p>
+      <%= @user.email %>
+      <span class="logo icon fa-bicycle"></span>
 
-Bienvenido a tu perfil:
-<p>
-  <%= @user.email %>
-  <span class="logo icon fa-bicycle"></span>
-</p>
+      <%= social_share_button_tag("SmartBike") %>
+    </p>
+  </div>
 
-Estos son tus progresos:
-<span class="logo icon fa-bar-chart"></span>
+  <div style="width: 40%; float:right">
+    Estos son tus progresos:
+    <span class="logo icon fa-bar-chart"></span>
 
+    <p>
+    <strong>Distancia:</strong>
+    <%= @user.distancia %> [km] 
+    <span class="logo icon fa-dashboard"></span>
+    </p>
 
-<p>
-  <strong>Distancia:</strong>
-  <%= @user.distancia %> [km] 
-  <span class="logo icon fa-dashboard"></span>
-</p>
+    <p>
+      <strong>Tiempo:</strong>
+      <%= @user.tiempo %> [horas]
+      <span class="logo icon fa-clock-o"></span>
+    </p>
 
-<p>
-  <strong>Tiempo:</strong>
-  <%= @user.tiempo %> [horas]
-  <span class="logo icon fa-clock-o"></span>
-</p>
+    <p>
+      <strong>CO2:</strong>
+      <%= @user.co2 %>  [C02]
+      <span class="logo icon fa-calculator"></span>
+    </p>
 
-<p>
-  <strong>CO2:</strong>
-  <%= @user.co2 %>	[C02]
-  <span class="logo icon fa-calculator"></span>
-</p>
-
-<p>
-  <strong>Calorias:</strong>
-  <%= @user.calorias %> [Kcal]
-  <span class="logo icon fa-medkit"></span>
-</p>
-
-<%= social_share_button_tag("SmartBike") %>
+    <p>
+      <strong>Calorias:</strong>
+      <%= @user.calorias %> [Kcal]
+      <span class="logo icon fa-medkit"></span>
+    </p>
+  </div>
+</div>
 

@@ -40,7 +40,7 @@ gem 'spring',        group: :development
 # Use unicorn as the app server
 gem 'unicorn'
 
-gem 'rails_12factor', group: :production
+gem 'rails_12factor'
 
 #Other useful gems
 gem 'devise'
