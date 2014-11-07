@@ -17231,3 +17231,19 @@ Pubnub::Client#start_event_machine | We're running on thin
 Pubnub::Client#start_event_machine | EM started in new thread
   [1m[36mActiveRecord::SchemaMigration Load (155.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (165.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
