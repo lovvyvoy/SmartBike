@@ -17263,3 +17263,20 @@ Created new Pubnub::Client instance
 Pubnub::Client#start_event_machine | starting EM in new thread
 Pubnub::Client#start_event_machine | We're running on thin
 Pubnub::Client#start_event_machine | EM started in new thread
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+Symbolizing options keys
+Setting default values
+
+
+Created new Pubnub::Client instance
+Pubnub::Client#start_event_machine | starting EM in new thread
+Pubnub::Client#start_event_machine | We're running on thin
+Pubnub::Client#start_event_machine | EM started in new thread
+                                                                                                                                                                                                                                                                              
