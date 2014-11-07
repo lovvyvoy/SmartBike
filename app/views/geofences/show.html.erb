@@ -38,8 +38,8 @@
             <% geogeo = Geofence.find(1) %>
             <% Geofence.update_all id: 1%>
             <% geogeo.reload %>
-            handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
-            markers = handler.addMarkers([
+            handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){}
+            handler.addMarkers([
               {
                 "lat": <%=geogeo.x_act %>,
                 "lng": <%=geogeo.y_act %>
@@ -47,7 +47,7 @@
             ]);
             handler.bounds.extendWith(markers);
             handler.fitMapToBounds();
-            }
+            
           );
           }, 10000);
         </script>
