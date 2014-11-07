@@ -3,18 +3,19 @@
 
 <div id="content">
   <div style="width: 40%; float:left">
-    Bienvenido a tu perfil:
+    <strong>Bienvenido a tu perfil:</strong>
     <p>
       <%= @user.email %>
       <span class="logo icon fa-bicycle"></span>
 
+      <%= image_tag "perf.jpg" %>
       <%= social_share_button_tag("SmartBike") %>
     </p>
   </div>
 
   <div style="width: 40%; float:right">
     Estos son tus progresos:
-    <span class="logo icon fa-bar-chart"></span>
+    <br>
 
     <p>
     <strong>Distancia:</strong>
