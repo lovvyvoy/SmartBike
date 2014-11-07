@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   resources :users, :only => [:show]
 
-  get 'users/:id' => 'users#show'
+  match 'users/:id' => 'users#show', via: :get
 
   get 'welcome/index'
 
