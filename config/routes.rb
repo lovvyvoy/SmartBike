@@ -16,13 +16,14 @@ Rails.application.routes.draw do
 
   resources :maps
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+  resources :geofences
+
   resources :users, :only => [:show]
-  get 'users/:id' => 'users#show'
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 
   get 'welcome/index'
 
-  resources :geofences
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
