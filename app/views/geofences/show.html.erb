@@ -36,7 +36,7 @@
 
           setInterval( function(){
             <% geogeo = Geofence.new 
-             geogeo.user_id = 1
+             geogeo.id = 1
              geogeo.reload %>
             handler.buildMap({ provider: {}, internal: {id: 'map', zoom: 10}}, function(){
             markers = handler.addMarkers([
